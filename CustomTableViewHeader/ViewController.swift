@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = CustomHeaderCell()
         headerView.imageView.image = UIImage(named: "recipe")
+        headerView.recipeTitleLabel.text = "Chocolate Cake"
+        headerView.timingLabel.text = "30 Minutes"
         return headerView;
     }
     
